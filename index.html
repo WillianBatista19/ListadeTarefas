@@ -1,0 +1,52 @@
+<!-- Criando HTML5 base -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <title>Lista de tarefas</title>
+	<!-- Criando spaço de script para comandos JS -->
+    <script>
+		function adicionarTarefa() {
+			// Lendo o valor digitado
+			var tarefa = document.getElementById("tarefa").value;
+            // Criando tarefa
+			var novaTarefa = document.createElement("p");
+			novaTarefa.innerText = tarefa;
+
+			// Adicionando tarefa a lista 
+			document.getElementById("listaTarefas").appendChild(novaTarefa);
+
+			// Limpando caixa de input
+			document.getElementById("tarefa").value = "";
+			}
+
+			function limparTarefas() {
+			// Limpando lista de atividades criada 
+			var divTarefas = document.getElementById("listaTarefas");
+			while (divTarefas.firstChild) {
+				divTarefas.removeChild(divTarefas.firstChild);
+			}
+	    }
+    </script>
+</head>
+<body>
+	<main id="main">
+		<!-- Criando H1 principal -->
+		<h1>Lista de tarefas</h1>
+		<div id="label">
+			<label for="tarefa">Digite uma nova tarefa:</label>
+			<input type="text" id="tarefa">
+		</div>
+		<div id="buttons">
+			<button id="button1" onclick="adicionarTarefa()">Adicionar</button>
+			<button id="button2" onclick="limparTarefas()">Limpar</button>
+		</div>
+		<div id="listaTarefas">
+			<!-- Espaço da lista criada -->
+		</div>
+	</main>
+</body>
+</html>

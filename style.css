@@ -1,0 +1,50 @@
+/* Configurando CSS do body */
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+/* Configurando H1 principal */
+h1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 50vw;
+    padding: 10px 0px;
+}
+
+/* Configurando estilo do label */
+#label {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Configurando estilos dos botões */
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+/* Configurando estilo do botão 1 */
+#button1 {
+    margin: 10px;
+}
+
+/* Configurando estilo do botão 2 */
+#button2 {
+    margin: 10px;
+}
+
+/* Estilizando a lista de tarefas */
+#listaTarefas {
+    background-image: url(image/imagem1.webp);
+    margin: auto;
+    background-color: white;
+    width: 40vh;
+}
+
